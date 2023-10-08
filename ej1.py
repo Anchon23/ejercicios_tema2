@@ -14,7 +14,7 @@ class Estrella:
             return "Galaxia Via Lacta"
         elif self.x >= 0 and self.y < 0:
             return "Galaxia Andromeda"
-        elif self.x >= 0 and self.y >= 0 and self.z < 0:
+        elif self.x > 0 and self.y >= 0 and self.z < 0:
             return "Galaxia Pegaso"
         else:
             return "Galaxia Desconocida"
@@ -26,7 +26,6 @@ class Estrella:
         distancia = math.sqrt(dist_x**2 + dist_y**2 + dist_z**2)
         return distancia
 
-# Ejemplo de uso
 estrella_A = Estrella(2, 3, 1)
 estrella_B = Estrella(4, 4, 4)
 estrella_C = Estrella(-3, -1, 0)
